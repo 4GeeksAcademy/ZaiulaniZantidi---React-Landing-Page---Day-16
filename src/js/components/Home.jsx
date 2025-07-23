@@ -1,63 +1,9 @@
 import React from 'react';
+import NavBar from './NavBar';
+import Jumbotron from './Jumbotron';
+import Card from './Card';
 
 
-const NavBar = () => {
-  return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <a className="navbar-brand" href="#">Start Bootstrap</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <svg className="toggler-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-
-      <div className="box">
-        <div className="navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li><a className="nav-link" href="#">Home</a></li>
-            <li><a className="nav-link" href="#">About</a></li>
-            <li><a className="nav-link" href="#">Services</a></li>
-            <li><a className="nav-link" href="#">Contact</a></li>
-          </ul>
-        </div>
-		  </div>
-      
-    </nav>
-  );
-};
-
-
-const Jumbotron = () => {
-  return (
-    <div className="jumbotron">
-      <h1 className="jumbotron-headline">A Warm Welcome!</h1>
-      <p className="jumbotron-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <a className="jumbotron-button" href="#" role="button">Call to Action</a>
-    </div>
-  );
-};
-
-
-const Card = ({ imageSrc, imageAlt, title, text, buttonText, buttonLink }) => {
-  return (
-    <div className="card-component">
-      <img src={imageSrc} alt={imageAlt} className="card-image" />
-      <div className="card-content">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{text}</p>
-        <div className="card-button-wrapper">
-          <a href={buttonLink} className="card-button">
-            {buttonText}
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 
 const App = () => {
